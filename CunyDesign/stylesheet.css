@@ -132,12 +132,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #f5f5f5;
+    background-color: #fff;
     padding: 30px;
     gap: 20px;
     width: calc(100% - 100px);
     border-radius: 8px;
     margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar h2 {
@@ -302,15 +303,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-end;
     width: calc(100% - 100px);
     margin: 0 auto;
     gap: 30px;
-    background-image: url(images/queens-college.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/queens-college.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 500px;
     border-radius: 8px;
+    padding: 20px;
 }
 
 .hero p {
@@ -318,17 +321,18 @@ body {
     font-weight: 600;
     width: 80%;
     margin: 0;
+    color: white;
 }
 
 h1 a {
-    color: black;
+    color: #2D5C9A;
     text-decoration: none;
     font-weight: 700;
     font-size: 30px;
 }
 
 h1 a:hover {
-    color: black;
+    color: #4D80E6;
     text-decoration: none;
 }
 
