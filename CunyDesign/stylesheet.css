@@ -22,7 +22,8 @@ header {
 }
 
 .material-symbols-outlined {
-    display: none; /* Hide menu icon by default */
+    display: none;
+    /* Hide menu icon by default */
 }
 
 #top-nav {
@@ -89,7 +90,7 @@ header {
         padding: 1rem;
         flex-direction: column;
         align-items: flex-start;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         border-radius: 12px;
     }
@@ -190,7 +191,7 @@ body {
     position: absolute;
     background-color: white;
     min-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 2;
     border-radius: 12px;
 }
@@ -216,12 +217,12 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .dropdown {
         width: 100%;
         max-width: 300px;
     }
-    
+
     .dropbtn {
         width: 100%;
         justify-content: flex-start;
@@ -238,18 +239,18 @@ body {
 }
 
 .card {
-    background-color: #f8f9fa;
+    background-color: #fffffc;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease;
     color: #2b2b2b;
     text-decoration: none;
     border: 0.5px solid #2b2b2b;
 }
 
 .card:hover {
-    background-color: #e2e6ea;
-    transform: translateY(-10px);
+    background-color: #fbfaf5;
+    transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -354,4 +355,51 @@ a {
         gap: 20px;
         padding: 10px;
     }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.event-info {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.content h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.content h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content p {
+    font-size: 14px;
+    font-weight: 300;
 }
