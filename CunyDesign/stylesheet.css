@@ -366,7 +366,7 @@ a {
 
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -402,4 +402,18 @@ a {
 .content p {
     font-size: 14px;
     font-weight: 300;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        margin-top: 2rem;
+    }
+    .hero p {
+        font-size: 30px;
+    }
 }
