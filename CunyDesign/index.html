@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="stylesheet.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Design @ CUNY - Home</title>
 </head>
 
 <body>
     <div id="wrapper">
         <header>
             <h1><a href="index.html">Design @ CUNY</a></h1>
-            <span class="material-symbols-outlined" id="menu-toggle" onclick="showMenu();">
+            <span class="material-symbols-outlined" id="menu-toggle" onclick="showMenu();" role="button" aria-label="Toggle navigation menu">
                 menu
             </span>
             <nav id="top-nav">
@@ -23,7 +23,10 @@
                     <li><a href="https://www.cuny.edu/financial-aid/">Financial Aid</a></li>
                     <li><a href="https://www.cuny.edu/admissions/apply-to-cuny/">Apply</a></li>
                 </ul>
-                <form action="#"><input type="search" value="search"></form>
+                <form action="#" role="search">
+                    <input type="search" placeholder="Search..." aria-label="Search website">
+                    <button type="submit" aria-label="Submit search">Search</button>
+                </form>
             </nav>
         </header>
         <nav class="navbar">
@@ -73,9 +76,7 @@
                         the New York City College of Technology each earned honors in Saturday's ceremony. The award for
                         CUNY TV brings to 21 the total number of Emmys the station has been awarded by the National
                         Academy of Television Arts & Sciences New York Chapter.</p>
-                    <a
-                        href="https://www.cuny.edu/about/press-release/cuny-tv-wins-21st-new-york-emmy-award-for-animated-opening-sequence-of-shades-of-u-s/">Read
-                        More</a>
+                    <a href="https://www.cuny.edu/about/press-release/cuny-tv-wins-21st-new-york-emmy-award-for-animated-opening-sequence-of-shades-of-u-s/">Read More</a>
                 </article>
                 <article>
                     <h3>CUNY Expands Digital Skills Curriculum and Creates Student Pipeline for Tech Jobs</h3>
@@ -91,7 +92,7 @@
             <aside class="sidebar">
                 <div class="section-event">
                     <h2>Events</h2>
-                    <a href="https://events.cuny.edu/cec/virtual-digital-design-showcase-day/"</a>
+                    <a href="https://events.cuny.edu/cec/virtual-digital-design-showcase-day/">
                         <div class="event-info">
                             <img src="images/Events-Image.png" alt="Event Image">
                             <strong>Virtual Digital Design Showcase Day</strong>
@@ -99,6 +100,7 @@
                             <h4>Time: 2:00- 4:00 PM</h4>
                             <h4>College: Bronx Community College</h4>
                         </div>
+                    </a>
                 </div>
             </aside>
         </div>
