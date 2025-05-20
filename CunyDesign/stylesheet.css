@@ -180,6 +180,11 @@ body {
     gap: 5px;
 }
 
+.dropbtn:hover {
+    background-color: #44617b;
+    color: #fff;
+}
+
 /* Arrow Icon */
 .dropbtn::after {
     content: '▾';
@@ -340,6 +345,12 @@ h1 a:hover {
 }
 
 a {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4D80E6;
     text-decoration: none;
 }
 
@@ -372,10 +383,13 @@ a {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background-color: #fbfaf5;
+    border-radius: 8px;
+    padding: 2rem;
 }
 
 .sidebar {
-    background-color: #f9f9f9;
+    background-color: #fbfaf5;
     padding: 1rem;
     border-radius: 8px;
 }
@@ -391,6 +405,22 @@ a {
     line-height: 1.5;
 }
 
+.section-event a {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.section-event a:hover {
+    color: #4D80E6;
+    text-decoration: none;
+}
+
+.content h2 {
+    color: #2b2b2b;
+    font-size: 30px;
+    font-weight: 600;
+}
+
 .content h3 {
     font-size: 24px;
     font-weight: 600;
@@ -404,6 +434,12 @@ a {
 .content p {
     font-size: 14px;
     font-weight: 300;
+}
+
+article p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #2b2b2b;
 }
 
 /* Mobile styles */
