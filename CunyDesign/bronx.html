@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="stylesheet.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Design @ CUNY - Bronx Programs</title>
 </head>
 
 <body class="programs">
     <div id="wrapper">
         <header>
             <h1><a href="index.html">Design @ CUNY</a></h1>
-            <span class="material-symbols-outlined" id="menu-toggle" onclick="showMenu();">
+            <span class="material-symbols-outlined" id="menu-toggle" onclick="showMenu();" role="button" aria-label="Toggle navigation menu">
                 menu
             </span>
             <nav id="top-nav">
@@ -23,7 +23,10 @@
                     <li><a href="https://www.cuny.edu/financial-aid/">Financial Aid</a></li>
                     <li><a href="https://www.cuny.edu/admissions/apply-to-cuny/">Apply</a></li>
                 </ul>
-                <form action="#"><input type="search" value="search"></form>
+                <form action="#" role="search">
+                    <input type="search" placeholder="Search..." aria-label="Search website">
+                    <button type="submit" aria-label="Submit search">Search</button>
+                </form>
             </nav>
         </header>
         <nav class="navbar">
@@ -97,13 +100,15 @@
             </div>
         </main>
         <script>
-         function showMenu(){
-        var  menu = document.getElementById("top-nav");
-        if  (menu.style.display==="none" || menu.style.display === ''){
-            menu.style.display="block";
-        } else {
-        menu.style.display="none";
+            function showMenu() {
+                var menu = document.getElementById("top-nav");
+                if (menu.style.display === "none" || menu.style.display === '') {
+                    menu.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                }
             }
-        }
         </script>
+    </div>
 </body>
+</html>
